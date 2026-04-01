@@ -1,6 +1,6 @@
 # 📘 Electrocode OS: Gestão Inteligente para Assistência Técnica
 
-![Electrocode OS Banner](https://via.placeholder.com/1200x350/003366/FFFFFF?text=Electrocode+OS+-+Gestão+Especializada)
+![Electrocode OS Logo](docs/assets/logo.png)
 
 > **Electrocode OS** é um ecossistema completo de gestão para empresas de assistência técnica, laboratórios de eletrônica e prestadores de serviços. Desenvolvido com uma arquitetura moderna e escalável para transformar a eficiência operacional.
 
