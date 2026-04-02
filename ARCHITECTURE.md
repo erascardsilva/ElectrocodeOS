@@ -1,6 +1,6 @@
-# 🏗️ Arquitetura de Software: Electrocode OS
+# Arquitetura de Software: Electrocode OS
 
-Este documento detalha as decisões arquiteturais e de engenharia aplicadas no desenvolvimento do **Electrocode OS**, demonstrando a solidez técnica por trás de uma aplicação de gestão enterprise.
+Documentação de decisões arquiteturais e de engenharia aplicadas no desenvolvimento do **Electrocode OS**.
 
 ---
 
@@ -9,7 +9,7 @@ Este documento detalha as decisões arquiteturais e de engenharia aplicadas no d
 O sistema utiliza uma arquitetura **Client-Server** desacoplada, com um Frontend Single Page Application (SPA) e um Backend RESTful API, orquestrados via **Docker**.
 
 ### Modelagem de Dados (MySQL)
-A escolha do MySQL como banco de dados relacional foi estratégica devido à natureza transacional do sistema (Ordens de Serviço, Financeiro e Estoque).
+A escolha do MySQL foi baseada na necessidade de integridade transacional (O.S, Financeiro e Estoque).
 - **Integridade Referencial**: Uso de FKs rigorosas para evitar inconsistências em deletação de clientes/OS.
 - **Performance**: Indexação otimizada para buscas rápidas em grandes volumes de históricos de serviço.
 - **Sequelize ORM**: Camada de abstração que garante segurança contra SQL Injection e agilidade no desenvolvimento.
@@ -45,11 +45,11 @@ O sistema é entregue como uma solução **Containerized**, o que permite alta p
 ### Fluxo de Deployment:
 1. **Nginx**: Atua como Proxy Reverso e servidor de arquivos estáticos, além de gerenciar certificados SSL/TLS.
 2. **Docker Compose**: Orquestra três containers principais: `frontend`, `backend` e `mysql`.
-3. **VPS Monitoring**: Um dos diferenciais é o painel de monitoramento em tempo real (exclusivo para Superadmin), que coleta métricas via comandos shell do sistema (`df`, `os_stats`) e Docker API (`docker stats`), apresentando gráficos de consumo de CPU/RAM/Disco.
+3. **VPS Monitoring**: Painel de monitoramento em tempo real para Superadmin. Coleta métricas via comandos shell (`df`, `os_stats`) e Docker API (`docker stats`), com gráficos de consumo de CPU/RAM/Disco.
 
 ---
 
-## 5. Decisões de Engenharia (Why?)
+## 5. Decisões Técnicas
 
 - **MVC vs Microservices**: Para o estágio atual e escala do projeto, uma arquitetura monolítica modular (Modular Monolith) sob MVC provê menor latência e maior facilidade de manutenção.
 - **Docker**: Escolhido para eliminar o problema de "funciona na minha máquina", permitindo deploys consistentes em qualquer VPS Linux sem necessidade de instalar dependências manualmente no host.
@@ -57,8 +57,7 @@ O sistema é entregue como uma solução **Containerized**, o que permite alta p
 
 ---
 
-> [!CAUTION]
-> As informações contidas aqui são de caráter descritivo para fins de portfólio. Detalhes de implementação específica de rotas e credenciais são confidenciais.
+As informações aqui contidas são descritivas para fins de showcase. Detalhes de implementação de rotas e credenciais são confidenciais.
 
 **Erasmo Cardoso**
-Analista Desenvolvedor de Sistemas | Electrocode
+Electrocode
