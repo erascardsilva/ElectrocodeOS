@@ -115,7 +115,7 @@ Fundador na **Electrocode**
 
 - [Site Oficial](https://www.electrocode.com.br/electrocodeos)
 - [Acesso ao Sistema](https://www.electrocode.com.br/app/authentication/sign-in)
-- [Teste por 7 Dias](https://www.electrocode.com.br/electrocodeos)
+- [Teste por 7 Dias](https://www.electrocode.com.br/formulario/teste-gratis/)
 
 
 ---
