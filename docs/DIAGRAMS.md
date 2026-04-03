@@ -56,14 +56,43 @@ Controle de status do ciclo de vida das ordens de serviço.
 ```mermaid
 stateDiagram-v2
     [*] --> Aberta : Entrada de Equipamento
-    Aberta --> Orcamento : Análise Técnica
-    Orcamento --> Aprovada : Aceite do Cliente
-    Orcamento --> Recusada : Cliente não aceitou
-    Aprovada --> EmReparo : Execução
-    EmReparo --> Finalizada : Testes de Qualidade
-    Finalizada --> Entregue : Retirada do Cliente
-    Recusada --> Entregue : Devolução s/ Reparo
-    Entregue --> [*]
+    [*] --> Garantia : Entrada em Garantia
+    
+    Aberta --> EmAnalise
+    Garantia --> EmAnalise
+    
+    EmAnalise --> OrcamentoGerado
+    OrcamentoGerado --> AguardandoAprovacao
+    
+    AguardandoAprovacao --> Aprovado : Cliente Aceitou
+    AguardandoAprovacao --> Reprovado : Cliente Recusou
+    
+    Aprovado --> AguardandoPecas
+    Aprovado --> EmReparo
+    
+    AguardandoPecas --> EmReparo
+    
+    EmReparo --> ProntoAvisar : Testes de Qualidade OK
+    ProntoAvisar --> ProntoAguardando : Comunicação Enviada
+    
+    ProntoAguardando --> Finalizado : Entrega Comum
+    ProntoAguardando --> FinalizadoFaturado : Entrega com Faturamento
+    
+    Reprovado --> FinalizadoReprovado : Devolução Recusada
+    
+    Finalizado --> [*]
+    FinalizadoFaturado --> [*]
+    FinalizadoReprovado --> [*]
+
+    state "Em Análise" as EmAnalise
+    state "Orçamento Gerado" as OrcamentoGerado
+    state "Aguardando Aprovação" as AguardandoAprovacao
+    state "Aguardando Peças" as AguardandoPecas
+    state "Em Reparo" as EmReparo
+    state "Pronto avisar cliente" as ProntoAvisar
+    state "Pronto aguardando cliente" as ProntoAguardando
+    state "Finalizado Faturado" as FinalizadoFaturado
+    state "Finalizado Reprovado" as FinalizadoReprovado
 ```
 
 ---
