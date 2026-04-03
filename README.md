@@ -88,7 +88,7 @@ O projeto segue o padrão **MVC (Model-View-Controller)** no backend, garantindo
 - **Resiliência**: Pipeline de backup automatizado (JSON/ZIP) para recuperação rápida de dados por empresa.
 - **Experiência do Usuário (UX)**: Design responsivo e PWA (Progressive Web App) para uso em bancada ou dispositivos móveis.
 
-Para detalhes sobre a arquitetura e fluxos de dados, acesse o guia de [Arquitetura de Sistemas](ARCHITECTURE.md).
+Para detalhes sobre a arquitetura, fluxos de dados e casos de uso, acesse os guias de [Arquitetura de Sistemas](ARCHITECTURE.md) e o [Mapa de Diagramas](docs/DIAGRAMS.md).
 
 ---
 

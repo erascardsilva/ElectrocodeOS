@@ -57,6 +57,12 @@ O sistema é entregue como uma solução **Containerized**, o que permite alta p
 
 ---
 
+## 6. Fluxos e Diagramas Visuais
+
+Para uma compreensão visual dos fluxos de requisição, modelagem de dados, workflow de O.S. e casos de uso (MVP 2), consulte o documento de [Diagramas do Sistema](docs/DIAGRAMS.md).
+
+---
+
 As informações aqui contidas são descritivas para fins de showcase. Detalhes de implementação de rotas e credenciais são confidenciais.
 
 **Erasmo Cardoso**
