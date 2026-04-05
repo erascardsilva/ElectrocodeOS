@@ -65,5 +65,5 @@ Para uma compreensão visual dos fluxos de requisição, modelagem de dados, wor
 
 As informações aqui contidas são descritivas para fins de showcase. Detalhes de implementação de rotas e credenciais são confidenciais.
 
-Erasmo Cardoso
+Erasmo Cardoso<br>
 Software Engineer |  Electronics Specialist

@@ -109,7 +109,7 @@ O sistema conta com um controle de acesso rigoroso por perfis, garantindo a inte
 
 ## Autor
 
-Erasmo Cardoso
+Erasmo Cardoso<br>
 Software Engineer |  Electronics Specialist
 
 
