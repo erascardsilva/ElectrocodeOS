@@ -144,6 +144,6 @@ graph LR
 
 ---
 
- **Erasmo Cardoso**
-Electrocode
+Erasmo Cardoso
+Software Engineer |  Electronics Specialist
 

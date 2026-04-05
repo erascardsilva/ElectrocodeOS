@@ -109,8 +109,8 @@ O sistema conta com um controle de acesso rigoroso por perfis, garantindo a inte
 
 ## Autor
 
-**Erasmo Cardoso**
-Fundador na **Electrocode**
+Erasmo Cardoso
+Software Engineer |  Electronics Specialist
 
 
 - [Site Oficial](https://www.electrocode.com.br/electrocodeos)
