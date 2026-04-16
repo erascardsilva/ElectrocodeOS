@@ -110,7 +110,7 @@ O sistema conta com um controle de acesso rigoroso por perfis, garantindo a inte
 ## Autor
 
 Erasmo Cardoso<br>
-Software Engineer |  Electronics Specialist
+Software Engineer |  Electronics Technician
 
 
 - [Site Oficial](https://www.electrocode.com.br/electrocodeos)
