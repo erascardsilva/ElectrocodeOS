@@ -38,6 +38,12 @@ Principais módulos do **Electrocode OS**:
 - **Etiquetas de Identificação**: Geração e impressão de etiquetas para organização física dos aparelhos no laboratório.
 - **Registro Visual**: Anexação de fotos dos equipamentos diretamente às O.S para máxima transparência.
 
+### Sistema de Pré-Cadastro Seguro (Quarentena)
+- **Link de Autoatendimento**: Geração de links externos seguros para que o próprio cliente realize seu cadastro.
+- **Segurança via JWT**: Links com validade de 2 horas e uso único, garantindo que o acesso seja controlado e temporário.
+- **Área de Quarentena**: Os dados preenchidos são enviados para uma tabela temporária (`cliente_pre_cadastros`), aguardando aprovação humana antes de integrar a base oficial.
+- **Validação de Tenant**: Bloqueio instantâneo do link caso a empresa atrelada ao token seja desativada ou esteja inadimplente.
+
 ### Módulo de Vendas e Estoque
 - **PDV Integrado**: Módulo de vendas com controle de estoque automatizado.
 - **Integração de Peças**: Baixa automática de componentes utilizados nas ordens de serviço.

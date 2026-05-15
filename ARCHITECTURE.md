@@ -63,6 +63,15 @@ Para uma compreensão visual dos fluxos de requisição, modelagem de dados, wor
 
 ---
 
+## 7. Sistema de Pré-Cadastro e Quarentena
+
+Implementação de um fluxo seguro para entrada de dados externos:
+- **Handshake e JWT**: O frontend público (`/authentication/pre-cadastro/:token`) valida um JWT que contém as claims de `empresaId`. O sistema verifica a integridade do token e o status da assinatura da empresa antes de liberar o formulário.
+- **Persistência em Quarentena**: Para evitar poluição do banco de dados oficial, utilizamos a tabela `cliente_pre_cadastros`. Os registros nesta tabela são transitórios e dependem de uma ação de `Aprovação` para serem movidos para `clientes` ou `Descarte` para exclusão permanente.
+- **Prevenção de Loops**: Uso de lógica de redirecionamento no frontend com `replace: true`, invalidando o histórico do navegador após o processamento do formulário para evitar envios duplicados.
+
+---
+
 As informações aqui contidas são descritivas para fins de showcase. Detalhes de implementação de rotas e credenciais são confidenciais.
 
 Erasmo Cardoso<br>
