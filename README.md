@@ -80,7 +80,7 @@ O sistema foi modelado para suportar o modelo de negócio SaaS (Software as a Se
 | **Essencial** | 1 | 2 | Microempresas |
 | **Profissional** | 2 | 3 | Assistências em Crescimento |
 | **Empresarial** | 3 | 4 | Médias Empresas |
-| **Master** | 4 | 5 | Grandes Centros Técnicos |
+| **Premium** | 4 | 5 | Grandes Centros Técnicos |
 
 *Todos os planos contam com recursos ilimitados (O.S., Clientes, Vendas) e acesso 24/7 via nuvem.*
 
